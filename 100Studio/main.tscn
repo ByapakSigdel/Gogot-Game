@@ -1,0 +1,31 @@
+[gd_scene load_steps=2 format=3 uid="uid://c4ds4rjghcoul"]
+
+[ext_resource type="Script" path="res://main.gd" id="1_cot7f"]
+
+[node name="main" type="Node2D"]
+script = ExtResource("1_cot7f")
+
+[node name="Play" type="Button" parent="."]
+offset_left = 2.0
+offset_top = 341.0
+offset_right = 150.0
+offset_bottom = 439.0
+text = "Play"
+
+[node name="Option" type="Button" parent="."]
+offset_left = 1.0
+offset_top = 657.0
+offset_right = 149.0
+offset_bottom = 755.0
+text = "Option"
+
+[node name="Exit" type="Button" parent="."]
+offset_left = -4.0
+offset_top = 914.0
+offset_right = 144.0
+offset_bottom = 1012.0
+text = "Exit"
+
+[connection signal="pressed" from="Play" to="." method="_on_play_pressed"]
+[connection signal="pressed" from="Option" to="." method="_on_option_pressed"]
+[connection signal="pressed" from="Exit" to="." method="_on_exit_pressed"]

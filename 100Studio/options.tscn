@@ -1,0 +1,22 @@
+[gd_scene load_steps=2 format=3 uid="uid://cq5r3cs785o22"]
+
+[ext_resource type="Script" path="res://options.gd" id="1_dt7jy"]
+
+[node name="Options" type="Node2D"]
+script = ExtResource("1_dt7jy")
+
+[node name="Button" type="Button" parent="."]
+offset_left = 430.0
+offset_top = 290.0
+offset_right = 697.0
+offset_bottom = 422.0
+text = "Options to be configured here."
+
+[node name="Back" type="Button" parent="."]
+offset_left = 3.0
+offset_top = 3.0
+offset_right = 153.0
+offset_bottom = 95.0
+text = "Back"
+
+[connection signal="pressed" from="Back" to="." method="_on_back_pressed"]

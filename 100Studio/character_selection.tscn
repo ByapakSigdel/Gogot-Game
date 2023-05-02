@@ -1,0 +1,38 @@
+[gd_scene load_steps=2 format=3 uid="uid://deimvll3waper"]
+
+[ext_resource type="Script" path="res://character_selection.gd" id="1_wdm7k"]
+
+[node name="Character_selection" type="Node2D"]
+script = ExtResource("1_wdm7k")
+
+[node name="Button" type="Button" parent="."]
+offset_left = 597.0
+offset_top = 241.0
+offset_right = 1164.0
+offset_bottom = 504.0
+text = "Character B"
+
+[node name="Button2" type="Button" parent="."]
+offset_top = 240.0
+offset_right = 473.0
+offset_bottom = 512.0
+text = "Character A"
+
+[node name="TextEdit" type="TextEdit" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -6.0
+offset_top = 3.0
+offset_right = 1145.0
+offset_bottom = 74.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "                                                                                                                         Selext the Character"
+editable = false
+wrap_mode = 1
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]
